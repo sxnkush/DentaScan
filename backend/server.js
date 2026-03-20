@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors({
-  origin: "https://denta-scan.vercel.app/",
+  origin: "https://denta-scan.vercel.app",
   credentials: true
 }));
 app.use(express.json());
