@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+  origin: "https://denta-scan.vercel.app/",
+  credentials: true
+}));
 app.use(express.json());
 
 let sensorData = { fsr: 0, gas: 0 };
