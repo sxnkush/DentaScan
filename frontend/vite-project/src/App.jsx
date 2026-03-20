@@ -11,7 +11,7 @@ function App() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
-  const SERVER_URL = "http://localhost:3000/data";
+  const SERVER_URL = "https://dentascan.onrender.com/data";
 
   // 🔹 Fetch sensor data
   useEffect(() => {
